@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-api-without-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/@app/index.js",
+    "dev": "nodemon src/@app/index.js"
+  },
+  "keywords": [],
+  "author": "Edison J. Padilla - EdisonJpp",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
