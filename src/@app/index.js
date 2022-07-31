@@ -1,7 +1,12 @@
-import App from "./app.js";
+import Framework from "../framework/index.js";
+import { router } from "./router.js";
+
 const port = 4000;
 
-(() => {
-  App.listen(port);
-  console.log(`Server running in port: ${port}`);
-})();
+async function runner() {
+  Framework.use(router);
+  await Framework.listen(port);
+  console.log(`server is running in port ${Framework.getPort()}`);
+}
+
+runner();
