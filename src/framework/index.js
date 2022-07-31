@@ -14,8 +14,6 @@ function server(router) {
 }
 
 class App {
-  constructor() {}
-
   router = null;
   port = null;
 
@@ -37,3 +35,4 @@ class App {
 }
 
 export default new App();
+export * from "./lib/router.js";
